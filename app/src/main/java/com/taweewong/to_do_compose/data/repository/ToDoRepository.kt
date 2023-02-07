@@ -2,9 +2,11 @@ package com.taweewong.to_do_compose.data.repository
 
 import com.taweewong.to_do_compose.data.ToDoDao
 import com.taweewong.to_do_compose.data.models.ToDoTask
+import dagger.hilt.android.scopes.ViewModelScoped
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
+@ViewModelScoped
 class ToDoRepository @Inject constructor(
     private val toDoDao: ToDoDao
 ) {
