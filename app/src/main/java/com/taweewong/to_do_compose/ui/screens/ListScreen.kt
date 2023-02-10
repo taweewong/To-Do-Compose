@@ -16,6 +16,9 @@ fun ListScreen(
     navigateToTaskScreen: (Int) -> Unit
 ) {
     Scaffold(
+        topBar = {
+            DefaultListAppBar()
+        },
         content = { paddingValues ->
             paddingValues
         },
